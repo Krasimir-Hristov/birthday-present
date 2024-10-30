@@ -2,9 +2,26 @@ import React from 'react';
 import Link from 'next/link';
 import { HeartIcon } from '@heroicons/react/24/solid';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white'>
+      <div className='flex items-center justify-between w-full max-w-2xl mb-10'>
+        <img
+          src='https://randomuser.me/api/portraits/girls/1.jpg' // Снимка на момиче 1
+          alt='Момиче 1'
+          className='rounded-full border-4 border-white h-24 w-24'
+        />
+        <img
+          src='https://randomuser.me/api/portraits/girls/2.jpg' // Снимка на момиче 2
+          alt='Момиче 2'
+          className='rounded-full border-4 border-white h-24 w-24'
+        />
+        <img
+          src='https://randomuser.me/api/portraits/men/1.jpg' // Снимка на момче
+          alt='Бебе'
+          className='rounded-full border-4 border-white h-24 w-24'
+        />
+      </div>
       <h1 className='text-5xl font-bold mt-10 mb-4'>
         Честит Рожден Ден, Любима!
       </h1>
