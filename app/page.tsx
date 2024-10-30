@@ -29,7 +29,13 @@ export default function HomePage() {
         Добре дошла в тази малка изненада от нас. Тук ще намериш специални
         спомени, поздрави и моменти от цялото ни семейство.
       </p>
-      <HeartIcon className='h-20 w-20 text-pink-200 mb-4 animate-pulse' />
+      <div className='flex flex-row'>
+        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
+        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
+        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
+        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
+        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
+      </div>
 
       <div className='flex gap-4 mt-6'>
         <Link
