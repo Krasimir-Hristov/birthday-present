@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { HeartIcon } from '@heroicons/react/24/solid';
+import Footer from './components/Footer';
 
 export default function HomePage() {
   return (
@@ -87,28 +88,6 @@ export default function HomePage() {
             className='rounded-full border-4 border-white h-20 w-20 md:h-24 md:w-24 mt-2'
           />
         </div>
-      </div>
-
-      {/* Линкове към другите секции */}
-      <div className='flex flex-wrap items-center justify-center gap-4 w-full max-w-2xl mb-10'>
-        <Link
-          href='/memories'
-          className='bg-white text-xl font-bold text-purple-600 px-6 py-3 md:px-8 md:py-4 rounded-lg shadow-lg hover:bg-purple-600 hover:text-white transition'
-        >
-          Спомени
-        </Link>
-        <Link
-          href='/wishes'
-          className='bg-white text-xl font-bold text-purple-600 px-6 py-3 md:px-8 md:py-4 rounded-lg shadow-lg hover:bg-purple-600 hover:text-white transition'
-        >
-          Пожелания
-        </Link>
-        <Link
-          href='/game'
-          className='bg-white text-xl font-bold text-purple-600 px-6 py-3 md:px-8 md:py-4 rounded-lg shadow-lg hover:bg-purple-600 hover:text-white transition'
-        >
-          Забавна игра
-        </Link>
       </div>
     </div>
   );
