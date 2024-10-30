@@ -7,17 +7,22 @@ export default function HomePage() {
     <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white'>
       <div className='flex items-center justify-between w-full max-w-2xl mb-10'>
         <img
-          src='https://randomuser.me/api/portraits/girls/1.jpg' // Снимка на момиче 1
+          src='/kid.png' // Снимка на момиче 1
           alt='Момиче 1'
           className='rounded-full border-4 border-white h-24 w-24'
         />
         <img
-          src='https://randomuser.me/api/portraits/girls/2.jpg' // Снимка на момиче 2
+          src='/kid.png' // Снимка на момиче 2
           alt='Момиче 2'
           className='rounded-full border-4 border-white h-24 w-24'
         />
         <img
-          src='https://randomuser.me/api/portraits/men/1.jpg' // Снимка на момче
+          src='/kid.png' // Снимка на момче
+          alt='Бебе'
+          className='rounded-full border-4 border-white h-24 w-24'
+        />
+        <img
+          src='/kid.png' // Снимка на момче
           alt='Бебе'
           className='rounded-full border-4 border-white h-24 w-24'
         />
@@ -29,14 +34,44 @@ export default function HomePage() {
         Добре дошла в тази малка изненада от нас. Тук ще намериш специални
         спомени, поздрави и моменти от цялото ни семейство.
       </p>
-      <div className='flex flex-row'>
-        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
-        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
-        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
-        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
-        <HeartIcon className='h-20 w-20 text-red-800 mb-4 animate-pulse' />
+
+      {/* Секция със снимки и сърца */}
+      <div className='grid grid-cols-4 gap-6 items-center mb-10'>
+        <div className='flex flex-col items-center'>
+          <HeartIcon className='h-20 w-20 text-red-800 mb-2 animate-pulse' />
+          <img
+            src='/kid.png' // Снимка 4
+            alt='Дете 4'
+            className='rounded-full border-4 border-white h-24 w-24'
+          />
+        </div>
+        <div className='flex flex-col items-center'>
+          <HeartIcon className='h-20 w-20 text-red-800 mb-2 animate-pulse' />
+          <img
+            src='/kid.png' // Снимка 4
+            alt='Дете 4'
+            className='rounded-full border-4 border-white h-24 w-24'
+          />
+        </div>
+        <div className='flex flex-col items-center'>
+          <HeartIcon className='h-20 w-20 text-red-800 mb-2 animate-pulse' />
+          <img
+            src='/kid.png' // Снимка 4
+            alt='Дете 4'
+            className='rounded-full border-4 border-white h-24 w-24'
+          />
+        </div>
+        <div className='flex flex-col items-center'>
+          <HeartIcon className='h-20 w-20 text-red-800 mb-2 animate-pulse' />
+          <img
+            src='/kid.png' // Снимка 4
+            alt='Дете 4'
+            className='rounded-full border-4 border-white h-24 w-24'
+          />
+        </div>
       </div>
 
+      {/* Линкове към другите секции */}
       <div className='flex gap-4 mt-6'>
         <Link
           href='/memories'
