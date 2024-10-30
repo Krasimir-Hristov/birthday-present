@@ -4,7 +4,10 @@ import { HeartIcon } from '@heroicons/react/24/solid';
 
 export default function HomePage() {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white'>
+    <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-green-300'>
+      <h1 className='text-6xl font-bold mt-10 mb-10 animate-bounce'>
+        Честит Рожден Ден!
+      </h1>
       <div className='flex items-center justify-between w-full max-w-2xl mb-10'>
         <img
           src='/kid.png' // Снимка на момиче 1
@@ -27,10 +30,10 @@ export default function HomePage() {
           className='rounded-full border-4 border-white h-24 w-24'
         />
       </div>
-      <h1 className='text-5xl font-bold mt-10 mb-4'>
+      <h2 className='text-5xl font-bold text-red-800 mt-10 mb-4 animate-pulse'>
         Честит Рожден Ден, Любима!
-      </h1>
-      <p className='text-lg mb-6 text-center max-w-lg'>
+      </h2>
+      <p className='text-2xl mb-6 text-center font-bold max-w-lg '>
         Добре дошла в тази малка изненада от нас. Тук ще намериш специални
         спомени, поздрави и моменти от цялото ни семейство.
       </p>
@@ -39,8 +42,8 @@ export default function HomePage() {
       <div className='grid grid-cols-4 gap-6 items-center mb-10'>
         {/* Първа снимка със сърце */}
         <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg'>
-            <HeartIcon className='h-12 w-12 text-red-800 animate-pulse' />
+          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
+            <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
             src='/kid.png' // Снимка 1
@@ -51,8 +54,8 @@ export default function HomePage() {
 
         {/* Втора снимка със сърце */}
         <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg'>
-            <HeartIcon className='h-12 w-12 text-red-800 animate-pulse' />
+          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
+            <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
             src='/kid.png' // Снимка 2
@@ -63,8 +66,8 @@ export default function HomePage() {
 
         {/* Трета снимка със сърце */}
         <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg'>
-            <HeartIcon className='h-12 w-12 text-red-800 animate-pulse' />
+          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
+            <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
             src='/kid.png' // Снимка 3
@@ -75,8 +78,8 @@ export default function HomePage() {
 
         {/* Четвърта снимка със сърце */}
         <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg'>
-            <HeartIcon className='h-12 w-12 text-red-800 animate-pulse' />
+          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
+            <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
             src='/kid.png' // Снимка 4
