@@ -41,9 +41,9 @@ const NavigationLinks = () => {
           Пожелания
         </Link>
         <Link
-          href='/game'
+          href='/gift'
           className={`text-2xl font-bold px-4 py-2 rounded-lg transition ${
-            pathname === '/game'
+            pathname === '/gift'
               ? 'bg-white text-purple-600'
               : 'text-white hover:bg-white hover:text-purple-600'
           }`}
