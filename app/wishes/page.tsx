@@ -57,25 +57,25 @@ const WishesPage = () => {
     setSelectedWish(null);
   };
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-200 via-blue-300 to-purple-300 py-16 px-4'>
-      <h2 className='text-4xl md:text-5xl font-bold text-blue-900 mb-10 text-center'>
+    <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-200 via-blue-300 to-purple-300 py-8 px-4'>
+      <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6 md:mb-10 text-center'>
         Пожелания към Любимата
       </h2>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl w-full'>
+      <div className='flex flex-col gap-6 md:gap-8 max-w-5xl w-full'>
         {videoData.map((wish) => (
           <div
             key={wish.id}
-            className='flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer'
+            className='flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer w-full md:flex-row md:items-center md:justify-between md:p-4'
             onClick={() => handleWishClick(wish)}
           >
             <img
               src={wish.imageSrc}
               alt={wish.altText}
-              className='w-full h-64 object-cover'
+              className='w-full h-48 object-cover rounded-lg md:w-1/3 md:h-auto md:rounded-lg'
             />
-            <div className='p-4'>
-              <p className='text-lg font-semibold text-gray-700'>
+            <div className='p-4 w-full text-center md:w-2/3 md:text-left'>
+              <p className='text-base sm:text-lg font-semibold text-gray-700'>
                 {wish.title}
               </p>
               <p className='text-sm text-gray-500'>{wish.description}</p>
@@ -85,18 +85,18 @@ const WishesPage = () => {
       </div>
 
       {selectedWish && (
-        <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
-          <div className='bg-white rounded-lg p-8 max-w-xl w-full flex flex-col items-center'>
+        <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4'>
+          <div className='bg-white rounded-lg p-6 md:p-8 max-w-lg w-full flex flex-col items-center'>
             <video
               controls
-              className='w-full h-auto max-h-80 rounded-lg shadow-lg mb-6'
+              className='w-full h-auto max-h-60 sm:max-h-72 md:max-h-80 rounded-lg shadow-lg mb-4 md:mb-6'
             >
               <source src={selectedWish.videoAfterClick} type='video/mp4' />
               Вашият браузър не поддържа видео тага.
             </video>
             <button
               onClick={handleClose}
-              className='bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition'
+              className='bg-red-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-red-800 transition text-sm md:text-base'
             >
               Затвори
             </button>
