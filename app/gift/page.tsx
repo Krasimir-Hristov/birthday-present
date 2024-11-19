@@ -106,7 +106,7 @@ const Page: React.FC = () => {
             Честит Рожден Ден!
           </h2>
           <img
-            src='/magicBook.png' // Път до изображението, което искаш да покажеш
+            src='images/magicBook.png' // Път до изображението, което искаш да покажеш
             alt='Семейна снимка'
             className='w-80 h-auto rounded-lg shadow-lg'
           />

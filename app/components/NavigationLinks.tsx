@@ -20,7 +20,7 @@ const NavigationLinks = () => {
         >
           Начало
         </Link>
-        <Link
+        {/* <Link
           href='/memories'
           className={`text-2xl font-bold px-4 py-2 rounded-lg transition ${
             pathname === '/memories'
@@ -29,7 +29,7 @@ const NavigationLinks = () => {
           }`}
         >
           Спомени
-        </Link>
+        </Link> */}
         <Link
           href='/wishes'
           className={`text-2xl font-bold px-4 py-2 rounded-lg transition ${

@@ -15,7 +15,7 @@ type Wishes = {
 const videoData: Wishes[] = [
   {
     id: 1,
-    imageSrc: '/kid.png',
+    imageSrc: '/images/kid.png',
     videoAfterClick: '/videos/testvideo.mp4',
     altText: 'Спомен 1',
     title: 'Първата ни семейна разходка на плажа',
@@ -25,7 +25,7 @@ const videoData: Wishes[] = [
   },
   {
     id: 2,
-    imageSrc: '/kid.png',
+    imageSrc: '/images/kid.png',
     videoAfterClick: '/videos/testvideo.mp4',
     altText: 'Спомен 2',
     title: 'Празнуване на рождения ден на мама',
@@ -35,7 +35,7 @@ const videoData: Wishes[] = [
   },
   {
     id: 3,
-    imageSrc: '/kid.png',
+    imageSrc: '/images/kid.png',
     videoAfterClick: '/videos/testvideo.mp4',
     altText: 'Спомен 3',
     title: 'Първият рожден ден на нашето бебе',
