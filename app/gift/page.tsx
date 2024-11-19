@@ -73,7 +73,7 @@ const Page: React.FC = () => {
                 {unlockedVideos[index] ? (
                   <video
                     controls
-                    className='w-full h-auto rounded-lg shadow-lg mb-6'
+                    className='w-3/4 md:w-2/3 h-auto rounded-lg shadow-lg mb-6'
                     onEnded={() => handleVideoEnd(index)}
                   >
                     <source src={video.src} type='video/mp4' />
@@ -106,7 +106,7 @@ const Page: React.FC = () => {
             Честит Рожден Ден!
           </h2>
           <img
-            src='images/magicBook.png' // Път до изображението, което искаш да покажеш
+            src='/images/family.jpg' // Път до изображението, което искаш да покажеш
             alt='Семейна снимка'
             className='w-80 h-auto rounded-lg shadow-lg'
           />
