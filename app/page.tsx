@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
 import { HeartIcon } from '@heroicons/react/24/solid';
-import Footer from './components/Footer';
 
 export default function HomePage() {
   return (
@@ -11,22 +9,22 @@ export default function HomePage() {
       </h1>
       <div className='flex flex-wrap items-center justify-center w-full max-w-2xl mb-10 gap-4'>
         <img
-          src='/kid.png' // Снимка на момиче 1
+          src='/images/lara-home.jpg'
           alt='Момиче 1'
           className='rounded-full border-4 border-white h-24 w-24'
         />
         <img
-          src='/kid.png' // Снимка на момиче 2
+          src='/kid.png'
           alt='Момиче 2'
           className='rounded-full border-4 border-white h-24 w-24'
         />
         <img
-          src='/kid.png' // Снимка на момче
+          src='/kid.png'
           alt='Бебе'
           className='rounded-full border-4 border-white h-24 w-24'
         />
         <img
-          src='/kid.png' // Снимка на момче
+          src='/kid.png'
           alt='Бебе'
           className='rounded-full border-4 border-white h-24 w-24'
         />
@@ -40,52 +38,40 @@ export default function HomePage() {
       </p>
 
       {/* Секция със снимки и сърца */}
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-6 items-center mb-10'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-10'>
         {/* Първа снимка със сърце */}
         <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
-            <HeartIcon className='h-16 w-16 md:h-20 md:w-20 text-red-800 animate-pulse' />
+          <div className='bg-white/50 rounded-full p-4 shadow-lg mb-4'>
+            <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
-            src='/kid.png' // Снимка 1
+            src='/images/lara-home.jpg'
             alt='Дете 1'
-            className='rounded-full border-4 border-white h-20 w-20 md:h-24 md:w-24 mt-2'
+            className='rounded-full border-4 border-white h-32 w-32 md:h-40 md:w-40 mt-2'
           />
         </div>
 
         {/* Втора снимка със сърце */}
         <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
-            <HeartIcon className='h-16 w-16 md:h-20 md:w-20 text-red-800 animate-pulse' />
+          <div className='bg-white/50 rounded-full p-4 shadow-lg mb-4'>
+            <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
-            src='/kid.png' // Снимка 2
+            src='/kid.png'
             alt='Дете 2'
-            className='rounded-full border-4 border-white h-20 w-20 md:h-24 md:w-24 mt-2'
+            className='rounded-full border-4 border-white h-32 w-32 md:h-40 md:w-40 mt-2'
           />
         </div>
 
         {/* Трета снимка със сърце */}
         <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
-            <HeartIcon className='h-16 w-16 md:h-20 md:w-20 text-red-800 animate-pulse' />
+          <div className='bg-white/50 rounded-full p-4 shadow-lg mb-4'>
+            <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
-            src='/kid.png' // Снимка 3
+            src='/kid.png'
             alt='Дете 3'
-            className='rounded-full border-4 border-white h-20 w-20 md:h-24 md:w-24 mt-2'
-          />
-        </div>
-
-        {/* Четвърта снимка със сърце */}
-        <div className='flex flex-col items-center'>
-          <div className='bg-white/50 rounded-full p-2 shadow-lg mb-3'>
-            <HeartIcon className='h-16 w-16 md:h-20 md:w-20 text-red-800 animate-pulse' />
-          </div>
-          <img
-            src='/kid.png' // Снимка 4
-            alt='Дете 4'
-            className='rounded-full border-4 border-white h-20 w-20 md:h-24 md:w-24 mt-2'
+            className='rounded-full border-4 border-white h-32 w-32 md:h-40 md:w-40 mt-2'
           />
         </div>
       </div>
