@@ -72,7 +72,7 @@ export default function HomePage() {
             <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
-            src='/kid.png'
+            src='/images/boran-home.jpg'
             alt='Дете 2'
             className='rounded-full border-4 border-white h-32 w-32 md:h-40 md:w-40 mt-2'
           />
@@ -84,7 +84,7 @@ export default function HomePage() {
             <HeartIcon className='h-20 w-20 text-red-800 animate-pulse' />
           </div>
           <img
-            src='/kid.png'
+            src='/images/ali-home.jpg'
             alt='Дете 3'
             className='rounded-full border-4 border-white h-32 w-32 md:h-40 md:w-40 mt-2'
           />
