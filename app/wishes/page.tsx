@@ -59,7 +59,7 @@ const WishesPage = () => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-200 via-blue-300 to-purple-300 py-8 px-4'>
       <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6 md:mb-10 text-center'>
-        Пожелания към Любимата
+        Ευχές για σένα
       </h2>
 
       <div className='flex flex-col gap-6 md:gap-8 max-w-5xl w-full'>
@@ -98,7 +98,7 @@ const WishesPage = () => {
               onClick={handleClose}
               className='bg-red-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg hover:bg-red-800 transition text-sm md:text-base'
             >
-              Затвори
+              Κλείσε
             </button>
           </div>
         </div>

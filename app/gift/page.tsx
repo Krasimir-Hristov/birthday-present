@@ -12,20 +12,20 @@ const videoData: Video[] = [
   {
     id: 1,
     src: '/videos/testvideo.mp4',
-    title: 'Начална точка',
-    description: 'Тук започва твоето приключение!',
+    title: 'Αφετηρία',
+    description: 'Εδώ ξεκινά η περιπέτειά σου!',
   },
   {
     id: 2,
     src: '/videos/testvideo.mp4',
-    title: 'Следваща стъпка',
-    description: 'Следващото място, където трябва да отидеш!',
+    title: 'Επόμενο βήμα',
+    description: 'Το επόμενο μέρος όπου πρέπει να πας!',
   },
   {
     id: 3,
     src: '/videos/testvideo.mp4',
-    title: 'Финалната цел',
-    description: 'Тук ще откриеш специалния подарък!',
+    title: 'Ο τελικός προορισμός',
+    description: 'Εδώ θα βρεις το ιδιαίτερο δώρο!',
   },
 ];
 
@@ -58,7 +58,7 @@ const Page: React.FC = () => {
       {!showFinalMessage ? (
         <>
           <h2 className='text-4xl md:text-5xl font-bold text-blue-900 mb-10 text-center'>
-            Приключението на Любимата
+            Βρες το δώρο σου
           </h2>
 
           <div className='flex flex-col items-center gap-8 w-full max-w-3xl'>
@@ -86,8 +86,8 @@ const Page: React.FC = () => {
                 )}
                 {!unlockedVideos[index] && (
                   <p className='text-red-500 mt-4'>
-                    Това видео все още е заключено. Моля, изгледай предходното
-                    видео!
+                    Αυτό το βίντεο είναι ακόμα κλειδωμένο. Παρακαλώ,
+                    παρακολούθησε το προηγούμενο βίντεο!
                   </p>
                 )}
               </div>

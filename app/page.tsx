@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-green-300 px-4'>
       <h1 className='text-4xl md:text-6xl font-bold mt-10 mb-10 animate-bounce text-center'>
-        Честит Рожден Ден!
+        Χρόνια Πολλά!
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-10'>
         {/* Първа снимка със сърце */}
@@ -45,11 +45,11 @@ export default function HomePage() {
         </div>
       </div>
       <h2 className='text-3xl md:text-5xl font-bold text-red-800 mt-10 mb-4 animate-pulse text-center'>
-        Честит Рожден Ден, Любима!
+        Χρόνια Πολλά, Αγάπη μου!
       </h2>
       <p className='text-lg md:text-2xl mb-6 text-center font-bold max-w-lg'>
-        Добре дошла в тази малка изненада от нас. Тук ще намериш специални
-        спомени, поздрави и моменти от цялото ни семейство.
+        Καλωσόρισες σε αυτή τη μικρή έκπληξη από εμάς. Εδώ θα βρεις ιδιαίτερες
+        αναμνήσεις, ευχές και στιγμές από όλη την οικογένειά μας
       </p>
 
       {/* Секция със снимки и сърца */}

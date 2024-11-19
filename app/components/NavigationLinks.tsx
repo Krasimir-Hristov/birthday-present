@@ -18,7 +18,7 @@ const NavigationLinks = () => {
               : 'text-white hover:bg-white hover:text-purple-600'
           }`}
         >
-          Начало
+          Αρχή
         </Link>
         {/* <Link
           href='/memories'
@@ -38,7 +38,7 @@ const NavigationLinks = () => {
               : 'text-white hover:bg-white hover:text-purple-600'
           }`}
         >
-          Пожелания
+          Ευχές
         </Link>
         <Link
           href='/gift'
@@ -48,7 +48,7 @@ const NavigationLinks = () => {
               : 'text-white hover:bg-white hover:text-purple-600'
           }`}
         >
-          Забавна игра
+          Δώρο
         </Link>
       </div>
     </div>
